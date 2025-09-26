@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix.Colne</title>
+    <style>
+         * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+.background{
+    position: relative;
+    background-image: url(https://e0.pxfuel.com/wallpapers/863/373/desktop-wallpaper-list-of-top-10-bollywood-films-remade-bollywood-movie-collage.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    color:white;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+.header{
+    position: relative;
+  z-index: 2;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.netflix-logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.5rem;
+  color: #e50914; /* Netflix red */
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+.top-buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.language-select {
+  padding: 6px 10px;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.sign-in-btn {
+  background: red;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 25%;
+  transform: translateY(-25%);
+  padding: 0 20px;
+}
+
+.main-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.price-info {
+  margin: 20px 0 10px;
+  font-size: 1.2rem;
+}
+
+.email-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.email-form input {
+  padding: 12px;
+  width: 300px;
+  max-width: 80%;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.email-form button {
+  padding: 12px 20px;
+  background: red;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <div class="background">
+    <div class="overlay"></div>  <!-- overlay is used for give backgroud layer -->
+    <header>
+        <h1 class="netflix-logo">NETFLIX</h1>
+        <div class="top buttons">
+            <select class="language-select">
+                <option>English</option>
+                <option>हिंदी</option>     
+            </select>
+            <button class="sign-in-btn">Sign In</button>
+        </div>
+    </header>
+    <div main class="main content">
+        <h1><b></b>Unlimited movies,TV<br> shows and more</b></h1>
+        <p><b>Starts at ₹149. Cancel at any time.</b></p>
+        <br>
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+
+    <div class="email-form">
+        <input type="email" name="email" palceholder="Enter the email"/>
+        <button class="get-Started">Get Started</button>
+    </div>
+    </div>
+</div>
+
+    
+</body>
+</html>
